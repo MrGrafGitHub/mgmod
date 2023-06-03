@@ -15,13 +15,10 @@ public class mgmod_Main implements ModInitializer {
     public static final String MOD_ID ="mgmod";
     public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
 
-    public static final Item CUSTOM_ITEM =
-            Registry.register(Registries.ITEM, new Identifier("tutorial", "test"),
-                    new Item(new FabricItemSettings()));
-
-
     @Override
     public void onInitialize() {
         mgmod_Items.registerModItems();
+        mgmod_Items.initialize();
+
     }
 }
