@@ -1,5 +1,5 @@
 package ru.mgmod.item;
 
-public class CUSTOM_ITEM {
+public class mgmod_Item {
 
 }
