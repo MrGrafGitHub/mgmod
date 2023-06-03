@@ -1,4 +1,4 @@
-package im.mgmod.mixin;
+package ru.mgmod.mixin;
 
 import net.minecraft.client.gui.screen.TitleScreen;
 import org.spongepowered.asm.mixin.Mixin;

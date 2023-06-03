@@ -1,8 +1,8 @@
-package im.mgmod.client;
+package ru.mgmod.client;
 
 import net.fabricmc.api.ClientModInitializer;
 
-public class MgmodClient implements ClientModInitializer {
+public class MGmodClient implements ClientModInitializer {
     /**
      * Runs the mod initializer on the client environment.
      */

@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "mgmod",
+  "version": "${version}",
+  "name": "mgmod",
+  "description": "",
+  "authors": [
+    "MrGraf"
+  ],
+  "contact": {
+    "repo": "https://github.com/MrGraf/mgmod"
+  },
+  "license": "MIT",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "im.mgmod.client.MGmodClient"
+    ],
+    "main": [
+      "im.mgmod.Mgmod"
+    ]
+  },
+  "mixins": [
+    "mgmod.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
