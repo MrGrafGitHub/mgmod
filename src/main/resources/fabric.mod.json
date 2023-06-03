@@ -11,13 +11,14 @@
     "repo": "https://github.com/MrGraf/mgmod"
   },
   "license": "MIT",
+  "icon": "assets/mgmod/icon.png",
   "environment": "*",
   "entrypoints": {
     "client": [
-      "im.mgmod.client.MGmodClient"
+      "ru.mgmod.client.mgmod_Client"
     ],
     "main": [
-      "im.mgmod.Mgmod"
+      "ru.mgmod.mgmod_Main"
     ]
   },
   "mixins": [
