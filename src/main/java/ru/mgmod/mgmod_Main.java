@@ -12,7 +12,6 @@ public class mgmod_Main implements ModInitializer {
 
     @Override
     public void onInitialize() {
-        mgmod_Items.registerModItems();
         mgmod_Items.initialize();
         mgmod_Blocks.initialize();
     }

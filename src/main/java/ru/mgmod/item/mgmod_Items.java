@@ -33,8 +33,4 @@ public class mgmod_Items {
                 // Add the item to the group when you get access to it.
                 .register((itemGroup) -> itemGroup.add(mgmod_Items.custom_item));
     }
-
-    public static void registerModItems() {
-        mgmod_Main.LOGGER.debug("Registering mod items"+ mgmod_Main.MOD_ID);
-    }
 }
