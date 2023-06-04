@@ -29,6 +29,7 @@ public class mgmod_Items {
         ItemGroupEvents
                 // Register a "modify" event for the Ingredients item group.
                 .modifyEntriesEvent(ItemGroups.INGREDIENTS)
+
                 // Add the item to the group when you get access to it.
                 .register((itemGroup) -> itemGroup.add(mgmod_Items.custom_item));
     }

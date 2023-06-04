@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "X",
+    "Y"
+  ],
+  "key": {
+    "X": {
+      "item": "minecraft:stone"
+    },
+    "Y": {
+      "item": "minecraft:cobblestone"
+    }
+  },
+  "result": {
+    "item": "mgmod:custom_block",
+    "count": 2
+  }
+}

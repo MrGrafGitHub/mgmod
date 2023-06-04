@@ -1,14 +1,9 @@
 package ru.mgmod;
 
 import net.fabricmc.api.ModInitializer;
-import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
-import net.minecraft.item.Item;
-
-import net.minecraft.registry.Registries;
-import net.minecraft.registry.Registry;
-import net.minecraft.util.Identifier;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import ru.mgmod.block.mgmod_Blocks;
 import ru.mgmod.item.mgmod_Items;
 
 public class mgmod_Main implements ModInitializer {
@@ -19,6 +14,6 @@ public class mgmod_Main implements ModInitializer {
     public void onInitialize() {
         mgmod_Items.registerModItems();
         mgmod_Items.initialize();
-
+        mgmod_Blocks.initialize();
     }
 }
