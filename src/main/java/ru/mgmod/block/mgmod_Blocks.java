@@ -12,8 +12,10 @@ import net.minecraft.registry.Registry;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 
-public class mgmod_Blocks {
-    public static <T extends Block> T register(T block, String name, boolean shouldRegisterItem) {
+public class mgmod_Blocks
+{
+    public static <T extends Block> T register(T block, String name, boolean shouldRegisterItem)
+    {
         Identifier id = new Identifier("mgmod", name);
 
         if(shouldRegisterItem) {
@@ -31,8 +33,10 @@ public class mgmod_Blocks {
                     AbstractBlock.Settings.of(Material.SOIL).sounds(BlockSoundGroup.GRASS)
             ), "custom_block", true);
 
-    public static void initialize() {
-        ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register((itemGroup) -> {
+    public static void initialize()
+    {
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register((itemGroup) ->
+        {
             itemGroup.add(mgmod_Blocks.custom_block.asItem());
         });
     }

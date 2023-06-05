@@ -4,27 +4,34 @@
   "version": "${version}",
   "name": "mgmod",
   "description": "",
-  "authors": [
+  "authors":
+  [
     "MrGraf"
   ],
-  "contact": {
+  "contact":
+  {
     "repo": "https://github.com/MrGraf/mgmod"
   },
   "license": "MIT",
   "icon": "assets/mgmod/icon.png",
   "environment": "*",
-  "entrypoints": {
-    "client": [
+  "entrypoints":
+  {
+    "client":
+    [
       "ru.mgmod.client.mgmod_Client"
     ],
-    "main": [
+    "main":
+    [
       "ru.mgmod.mgmod_Main"
     ]
   },
-  "mixins": [
+  "mixins":
+  [
     "mgmod.mixins.json"
   ],
-  "depends": {
+  "depends":
+  {
     "fabricloader": ">=${loader_version}",
     "fabric": "*",
     "minecraft": "${minecraft_version}"

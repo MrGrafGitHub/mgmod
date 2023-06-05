@@ -8,10 +8,12 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 
-public class mgmod_Items {
+public class mgmod_Items
+{
 
 
-    public static <T extends Item> T register(T item, String ID) {
+    public static <T extends Item> T register(T item, String ID)
+    {
         // Create the identifier for the item.
         Identifier itemID = new Identifier("mgmod", ID);
 
@@ -26,7 +28,8 @@ public class mgmod_Items {
         "custom_item");
 
 
-    public static void initialize() {
+    public static void initialize()
+    {
         ItemGroupEvents
             // Register a "modify" event for the Ingredients item group.
             .modifyEntriesEvent(ItemGroups.INGREDIENTS)
