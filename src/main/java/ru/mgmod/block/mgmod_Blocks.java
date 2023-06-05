@@ -24,6 +24,8 @@ public class mgmod_Blocks {
         return Registry.register(Registries.BLOCK, id, block);
     }
 
+
+
     public static final Block custom_block = register(
             new Block(
                     AbstractBlock.Settings.of(Material.SOIL).sounds(BlockSoundGroup.GRASS)

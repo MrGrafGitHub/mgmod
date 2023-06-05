@@ -7,9 +7,9 @@ import net.minecraft.item.ItemGroups;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
-import ru.mgmod.mgmod_Main;
 
 public class mgmod_Items {
+
 
     public static <T extends Item> T register(T item, String ID) {
         // Create the identifier for the item.
@@ -22,15 +22,16 @@ public class mgmod_Items {
         return registeredItem;
     }
     public static final Item custom_item = register(
-            new Item(new FabricItemSettings()),
-            "custom_item");
+        new Item(new FabricItemSettings()),
+        "custom_item");
+
 
     public static void initialize() {
         ItemGroupEvents
-                // Register a "modify" event for the Ingredients item group.
-                .modifyEntriesEvent(ItemGroups.INGREDIENTS)
+            // Register a "modify" event for the Ingredients item group.
+            .modifyEntriesEvent(ItemGroups.INGREDIENTS)
 
-                // Add the item to the group when you get access to it.
-                .register((itemGroup) -> itemGroup.add(mgmod_Items.custom_item));
+            // Add the item to the group when you get access to it.
+            .register((itemGroup) -> itemGroup.add(mgmod_Items.custom_item));
     }
 }
