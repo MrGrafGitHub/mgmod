@@ -1,5 +1,5 @@
 {
   "item.mgmod.custom_item": "Graf Item!",
-  "item.mgmod.custom_item.tooltip": "My Tooltip in day %d, and month %d",
+  "item.mgmod.custom_item.tooltip": "My Tooltip",
   "block.mgmod.custom_block": "Graf block!"
 }

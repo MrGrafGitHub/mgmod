@@ -18,7 +18,8 @@ public class mgmod_Blocks
     {
         Identifier id = new Identifier("mgmod", name);
 
-        if(shouldRegisterItem) {
+        if(shouldRegisterItem)
+        {
             BlockItem blockItem = new BlockItem(block, new Item.Settings());
             Registry.register(Registries.ITEM, id, blockItem);
         }
@@ -29,16 +30,13 @@ public class mgmod_Blocks
 
 
     public static final Block custom_block = register(
-            new Block(
-                    AbstractBlock.Settings.of(Material.SOIL).sounds(BlockSoundGroup.GRASS)
-            ), "custom_block", true);
+            new Block(AbstractBlock.Settings.of(Material.SOIL).sounds(BlockSoundGroup.GRASS)),
+            "custom_block", true);
 
     public static void initialize()
     {
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register((itemGroup) ->
-        {
-            itemGroup.add(mgmod_Blocks.custom_block.asItem());
-        });
+            {itemGroup.add(mgmod_Blocks.custom_block.asItem());});
     }
 
 }
